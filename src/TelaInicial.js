@@ -12,7 +12,7 @@ export default class Principal extends Component {
         <View style={styles.distanciaBotoes}>
           <Button
             onPress={() => { Actions.http(); }}
-            title="Requisições HTTP com Axios"
+            title="HTTP com Axios"
             color="#FF8C00"
           />
         </View>
@@ -20,8 +20,16 @@ export default class Principal extends Component {
         <View style={styles.distanciaBotoes}>
           <Button
             onPress={() => { Actions.jokenpo(); }}
-            title="Jogo Jokenpo"
+            title="Jokenpo"
             color="#FFB90F"
+          />
+        </View>
+
+        <View style={styles.distanciaBotoes}>
+          <Button
+            onPress={() => { Actions.coroa(); }}
+            title="Cara ou Coroa"
+            color="#EE7621"
           />
         </View>
 
