@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Button, Image} from 'react-native';
+import {StyleSheet, Text, View, Button, Image, Vibration} from 'react-native';
 
 import Topo from './Topo.js';
 import Icone from './Icone.js';
@@ -56,6 +56,12 @@ export default class Jogo extends Component{
     }
 
     this.setState({resultadoJogo: resultado});
+
+    const Duracao = 500;
+
+    if (resultado == 'Você Venceu') {
+      Vibration.vibrate(Duracao);
+    }
 
   }
 
