@@ -12,16 +12,16 @@ export default class Principal extends Component {
         <View style={styles.distanciaBotoes}>
           <Button
             onPress={() => { Actions.http(); }}
-            title="HTTP com Axios"
-            color="#FF8C00"
+            title="Requisições HTTP com o Axios"
+            color="#32CD32"
           />
         </View>
 
         <View style={styles.distanciaBotoes}>
           <Button
             onPress={() => { Actions.jokenpo(); }}
-            title="Jokenpo"
-            color="#FFB90F"
+            title="Pedra, Papel e Tesoura"
+            color="#EE0000"
           />
         </View>
 
@@ -29,7 +29,23 @@ export default class Principal extends Component {
           <Button
             onPress={() => { Actions.coroa(); }}
             title="Cara ou Coroa"
-            color="#EE7621"
+            color="#9400D3"
+          />
+        </View>
+
+        <View style={styles.distanciaBotoes}>
+          <Button
+            onPress={() => { Actions.calculadora(); }}
+            title="Calculadora"
+            color="#1C86EE"
+          />
+        </View>
+
+        <View style={styles.distanciaBotoes}>
+          <Button
+            onPress={() => { Actions.saibamais(); }}
+            title="Saiba Mais"
+            color="#BEBEBE"
           />
         </View>
 
