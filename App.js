@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+
+import Rotas from './src/Rotas';
 
 export default class App extends Component{
   render() {
     return (
-      <View>
-        <Text> Tela Inicial </Text>
-      </View>
+      <Rotas />
     );
   }
 }
